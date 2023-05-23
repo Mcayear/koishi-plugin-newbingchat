@@ -1,21 +1,47 @@
 {
   "name": "koishi-plugin-newbingchat",
   "description": "不需要proxy即可使用的newbing AI，基于NewbingGoGo。",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "contributors": [
+    "Mcayear <mcayear@163.com>",
+    "简简aw <jja8@jja8.cn>"
+  ],
   "license": "MIT",
-  "scripts": {},
+  "homepage": "https://github.com/Mcayear/koishi-plugin-newbingchat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mcayear/koishi-plugin-newbingchat.git"
+  },
+  "scripts": {
+    "build": "atsc -b",
+    "pub": "npm publish"
+  },
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "aichat",
+    "newbingchat"
   ],
   "peerDependencies": {
     "koishi": "^4.12.9"
+  },
+  "koishi": {
+    "description": {
+      "en": "The newbing AI, which can be used without a proxy, is based on NewbingGoGo.",
+      "zh": "不需要proxy即可使用的newbing AI，基于NewbingGoGo。"
+    },
+    "service": {
+      "required": [],
+      "optional": [],
+      "implements": []
+    },
+    "locales": ["en", "zh"]
   }
 }
